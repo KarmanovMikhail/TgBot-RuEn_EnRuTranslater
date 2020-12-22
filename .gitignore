@@ -13,3 +13,9 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+#startup script with API keys and telegramm bot's token
+startupBot
+
+#compiled file
+TgBot-RuEn_EnRuTranslater
