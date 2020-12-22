@@ -110,8 +110,8 @@ func sendToTranslater(apiKey string, sendingText string) string {
 		panic(err0)
 		return "fault to translate"
 	}
+
 	myString := string(jsonSendData[:])
-	log.Printf("myString = %s", myString)
 	payload := strings.NewReader(myString)
 
 	req, _ := http.NewRequest("POST", url, payload)
