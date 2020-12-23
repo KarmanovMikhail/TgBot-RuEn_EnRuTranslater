@@ -1,8 +1,3 @@
-//принимать токен сервиса переводчика
-//откидывать протухшие сообщения
-//отправлять и принимать сообщения в/от сервис-переводчик
-//определять язык сообщения
-
 package main
 
 import (
@@ -110,7 +105,7 @@ func sendToTranslater(apiKey string, sendingText string) string {
 		panic(err0)
 		return "fault to translate"
 	}
-
+  
 	myString := string(jsonSendData[:])
 	payload := strings.NewReader(myString)
 
